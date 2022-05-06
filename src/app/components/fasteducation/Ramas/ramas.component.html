@@ -1,0 +1,55 @@
+<app-nav-barprincipal></app-nav-barprincipal>
+<h1 class="title">Matemáticas</h1>
+<h1 class="title">La escencia de las matemáticas, no es hacer las cosas faciles complicadas, sino hacer las cosas complicadas simples.</h1>
+<h1 class="title">Ramas</h1>
+
+
+<br><br><br><br>
+<mat-grid-list cols="2" rowHeight="6:0.5">
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/aritmetica'">
+      <h2>Aritmética</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/ciencias'">
+      <h2>Algebra</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/lenguajes'">
+      <h2>Geometría</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/culturageneral'">
+      <h2>Estadística General</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/computo'">
+      <h2>Trigonometría</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/historiadelperu'">
+      <h2>Razonamiento Matemático</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/temas'">
+      <h2>Matemática Básica</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/cienciassociales'">
+      <h2>Conjuntos</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+</mat-grid-list>
+<br><br>
+<button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/cursos'" >Regresar</button>

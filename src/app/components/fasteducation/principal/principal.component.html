@@ -1,0 +1,13 @@
+
+
+<app-nav-barprincipal></app-nav-barprincipal>
+
+<h1 class="title">"Elige la ruta de aprendizaje que deseas estudiar"</h1>
+<div  *ngFor="let ruta of rutas" >
+  <p class="title">{{ruta.nombre}} </p>
+  <p>{{ruta.totalCursos}}</p>
+  <img src="{{ruta.img}}" class="iman" [routerLink]="'/cursos'">
+</div>
+
+<button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/login'" >Regresar</button>
+

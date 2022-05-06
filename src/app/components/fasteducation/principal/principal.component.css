@@ -1,0 +1,37 @@
+
+.title{
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+
+  text-align: left;
+}
+mat-grid-tile {
+  background-color: #F07E81;
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+  margin-left: 150px;
+  border-radius: 5%;
+  height: 15px;
+}
+.button{
+
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E5E5;
+  height: 100%;
+}
+.iman{
+  width: 6%;
+  height: 150%;
+}

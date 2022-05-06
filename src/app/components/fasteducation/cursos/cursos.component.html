@@ -1,0 +1,51 @@
+<app-nav-barprincipal></app-nav-barprincipal>
+<h1 class="title">Cursos Disponibles</h1>
+<br><br><br><br>
+<mat-grid-list cols="2" rowHeight="6:0.5">
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/ramas'">
+      <h2>Matemáticas</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/ciencias'">
+      <h2>Ciencias</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/lenguajes'">
+      <h2>Lenguaje</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/culturageneral'">
+      <h2>Cultura General</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/computo'">
+      <h2>Computo</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/historiadelperu'">
+      <h2>Historia del Perú</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/idiomas'">
+      <h2>Idiomas</h2>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [routerLink]="'/cienciassociales'">
+      <h2>Ciencias Sociales</h2>
+    </button>
+  </mat-grid-tile>
+  <br><br>
+</mat-grid-list>
+<br><br>
+<button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/principal'" >Regresar</button>

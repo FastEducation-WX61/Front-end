@@ -1,0 +1,22 @@
+<app-nav-barlogin></app-nav-barlogin>
+<div class="body">
+  <div class="login">
+    <h1 class="h3 mb-3 fw-normal">Login</h1>
+    <mat-form-field class="ancho" appearance="fill">
+      <mat-label>Usuario</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="ancho" appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/principal'">Iniciar Sesion</button>
+    <br><br>
+    <mat-label><a [routerLink]="'/changepassword'">¿Olvidaste tu contraseña?</a></mat-label>
+    <br><br>
+    <mat-label>¿Aún no tienes una cuenta en Fast Education?</mat-label>
+    <br><br>
+    <button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/register'">Registrarse</button>
+  </div>
+</div>
