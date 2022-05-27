@@ -3,6 +3,26 @@
   max-width: 800px;
   padding: 15px;
 
-  text-align: left;
+  text-align: center;
+}
+
+.titles{
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+.button{
+  background-color: #204114;
+  width: 100%;
+  max-width: 250px;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7%;
 }
 

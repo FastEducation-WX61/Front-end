@@ -15,7 +15,7 @@ mat-grid-tile {
   border-radius: 5%;
 }
 .button{
-  background-color: #F07E81;
+  background-color: #204114;
   width: 100%;
   max-width: 250px;
   padding: 15px;
@@ -24,5 +24,24 @@ mat-grid-tile {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5%;
+  height: 7%;
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 100%;
+}
+.container{
+  height: 100%;
+  width:100%;
+  grid-gap: 10px;
+  display:grid;
+  grid-template-columns: 50% 50%;
+
+}
+.iman{
+  width: 20%;
+  height: 220%;
 }

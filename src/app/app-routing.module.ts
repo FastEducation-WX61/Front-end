@@ -21,6 +21,11 @@ const routes: Routes = [
   {path: 'temas', component: TemasComponent},
   {path: 'video', component: VideoComponent},
   {path: 'ramas', component: RamasComponent},
+  {path: 'cursos/:id', component:CursosComponent},
+  {path: 'ramas/:id', component:RamasComponent},
+  {path: 'temas/:id', component:TemasComponent},
+  {path: 'videos/:id', component:VideoComponent}
+
 ];
 
 @NgModule({

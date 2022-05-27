@@ -1,51 +1,24 @@
 <app-nav-barprincipal></app-nav-barprincipal>
+
 <h1 class="title">Cursos Disponibles</h1>
 <br><br><br><br>
-<mat-grid-list cols="2" rowHeight="6:0.5">
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/ramas'">
-      <h2>Matemáticas</h2>
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/ciencias'">
-      <h2>Ciencias</h2>
-    </button>
-  </mat-grid-tile>
-  <br><br>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/lenguajes'">
-      <h2>Lenguaje</h2>
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/culturageneral'">
-      <h2>Cultura General</h2>
-    </button>
-  </mat-grid-tile>
-  <br><br>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/computo'">
-      <h2>Computo</h2>
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/historiadelperu'">
-      <h2>Historia del Perú</h2>
-    </button>
-  </mat-grid-tile>
-  <br><br>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/idiomas'">
-      <h2>Idiomas</h2>
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/cienciassociales'">
-      <h2>Ciencias Sociales</h2>
-    </button>
-  </mat-grid-tile>
-  <br><br>
+<mat-grid-list cols="2" rowHeight="2.3:0.6">
+
+  <div  *ngFor="let curso of cursos; let i=index" >
+    <mat-grid-tile>
+
+      <button mat-button title="{{curso.totalVideos}} cursos"  >
+        <h2>{{curso.nombre}}</h2>
+        <h2><img src="{{curso.img}}" class="iman" [routerLink]="'/ramas'"></h2>
+        <h2>"Total de videos":{{curso.totalVideos}}</h2>
+        <a [routerLink]="['/ramas',curso._id]">"Ir a curso"</a>
+      </button>
+    </mat-grid-tile>
+    <br>
+    <div *ngIf="(i+1)==2">
+      <br><br>
+    </div>
+  </div>
 </mat-grid-list>
 <br><br>
-<button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/principal'" >Regresar</button>
+<button mat-raised-button mat-button color="primary" class="button" [routerLink]="'/principal'" >Regresar</button>

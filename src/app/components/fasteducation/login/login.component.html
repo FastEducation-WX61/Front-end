@@ -1,22 +1,33 @@
 <app-nav-barlogin></app-nav-barlogin>
 <div class="body">
-  <div class="login">
-    <h1 class="h3 mb-3 fw-normal">Login</h1>
-    <mat-form-field class="ancho" appearance="fill">
-      <mat-label>Usuario</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <mat-form-field class="ancho" appearance="fill">
-      <mat-label>Contraseña</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <br>
-    <button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/principal'">Iniciar Sesion</button>
-    <br><br>
-    <mat-label><a [routerLink]="'/changepassword'">¿Olvidaste tu contraseña?</a></mat-label>
-    <br><br>
-    <mat-label>¿Aún no tienes una cuenta en Fast Education?</mat-label>
-    <br><br>
-    <button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/register'">Registrarse</button>
+  <div class="container">
+    <div class="box">
+      <br><br>
+
+      <div class="login">
+        <img src="https://i.ibb.co/P4RCJKd/Logo-Makr-0-Nm-PKo.png" alt="Fast Education" class="logo">
+        <br><br>
+        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <mat-form-field class="ancho" appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input  matInput>
+        </mat-form-field>
+        <mat-form-field class="ancho" appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button mat-button color="black" class="ancho button" [routerLink]="'/principal'">Iniciar Sesion</button>
+        <br><br>
+        <mat-label><a [routerLink]="'/changepassword'">¿Olvidaste tu contraseña?</a></mat-label>
+        <br><br>
+        <mat-label >¿Aún no tienes una cuenta en Fast Education?</mat-label>
+        <br><br>
+        <button mat-raised-button mat-button color="black" class="ancho button" [routerLink]="'/register'">Registrarse</button>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://i.ibb.co/q5hKWT0/My-project.png">
+    </div>
   </div>
 </div>

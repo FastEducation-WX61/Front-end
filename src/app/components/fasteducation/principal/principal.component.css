@@ -3,11 +3,12 @@
   width: 100%;
   max-width: 700px;
   padding: 15px;
-
+ color: #0b3d28;
   text-align: left;
+  ;
 }
 mat-grid-tile {
-  background-color: #F07E81;
+  background: rosybrown;
   width: 50%;
   max-width: 300px;
   text-align: center;
@@ -16,22 +17,33 @@ mat-grid-tile {
   height: 15px;
 }
 .button{
-
-  height: 50px;
-  justify-content: center;
-  align-items: center;
+  background-color: #204114;
+  width: 100%;
+  max-width: 250px;
+  padding: 15px;
   margin: auto;
-
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7%;
 }
-
 .body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
   height: 100%;
 }
 .iman{
-  width: 6%;
-  height: 150%;
+  width: 20%;
+  height: 200%;
+}
+.container{
+  height: 100%;
+  width:100%;
+  grid-gap: 10px;
+  display:grid;
+
+
 }

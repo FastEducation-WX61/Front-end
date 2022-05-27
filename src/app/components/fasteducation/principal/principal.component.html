@@ -1,13 +1,25 @@
-
-
 <app-nav-barprincipal></app-nav-barprincipal>
-
+<div class="body">
+  <div class="container">
 <h1 class="title">"Elige la ruta de aprendizaje que deseas estudiar"</h1>
-<div  *ngFor="let ruta of rutas" >
-  <p class="title">{{ruta.nombre}} </p>
-  <p>{{ruta.totalCursos}}</p>
-  <img src="{{ruta.img}}" class="iman" [routerLink]="'/cursos'">
+<mat-grid-list cols="2" rowHeight="4:1">
+<div  *ngFor="let ruta of rutas; let i=index" >
+    <mat-grid-tile>
+      <button mat-button title="{{ruta.totalCursos}} cursos"  >
+        <h2>{{ruta.nombre}}</h2>
+        <h2><img src="{{ruta.img}}" class="iman" ></h2>
+        <h2>"Total de cursos":{{ruta.totalCursos}}</h2>
+        <a [routerLink]="['/cursos',ruta._id]">"Ir a ruta"</a>
+      </button>
+    </mat-grid-tile>
+  <br>
+  <div *ngIf="(i+1)==2">
+  <br>
+  </div>
+
 </div>
+</mat-grid-list>
+<button mat-raised-button mat-button color="primary" class="button" [routerLink]="'/login'" >Regresar</button>
 
-<button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/login'" >Regresar</button>
-
+</div>
+</div>

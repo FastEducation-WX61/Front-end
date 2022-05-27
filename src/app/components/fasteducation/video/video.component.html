@@ -1,19 +1,6 @@
 
 <app-nav-barprincipal></app-nav-barprincipal>
-<h1 class="title">Video</h1>
-<youtube-player
-  videoId="5BaR2DzzdEs"
-  suggestedQuality="highres"
-  [height]="250"
-  [width]="500"
-  [startSeconds]="4"
-  [endSeconds]="8">
-</youtube-player>
-<form class="form-inline waves-light" mdbWavesEffect>
-  <div class="md-form mt-0">
-    <input class="form-control mr-sm-2" type="text" placeholder="Deja un comentario">
-  </div>
-</form>
-<button mat-raised-button mat-button color="primary" class="ancho button" ><u>Ver preguntas de otros estudiantes</u></button>
-<br><br>
-<button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/temas'" >Regresar</button>
+<mat-grid-list cols="2" rowHeight="2.3:0.5">
+{{video.nombre}}
+</mat-grid-list>
+<button mat-raised-button mat-button color="primary" class="button titles" [routerLink]="'/temas'" >Regresar</button>

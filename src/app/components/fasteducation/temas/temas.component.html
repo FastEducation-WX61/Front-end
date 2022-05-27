@@ -2,35 +2,23 @@
 <h1 class="title">Se deben tener buenas bases para avanzar en las matemáticas. Termina esta ruta
   y comienza tu viaje en este mundo de conocimientos.
   Tiempo del curso: 10 horas</h1>
-<br><br><br><br>
-<mat-grid-list cols="2" rowHeight="6:0.5">
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/video'">
-      <h2>¿Que son las matemáticas?</h2>
-    </button>
-  </mat-grid-tile>
+<br><br>
+<mat-grid-list cols="2" rowHeight="2.3:0.5">
 
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/números'">
-      <h2>Los números</h2>
-    </button>
-  </mat-grid-tile>
+  <div  *ngFor="let tema of temas; let i=index" >
+    <mat-grid-tile>
 
-  <br><br>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/video'">
-      <h2>Sumas</h2>
-    </button>
-  </mat-grid-tile>
-
-  <br><br>
-  <mat-grid-tile>
-    <button mat-button [routerLink]="'/restas'">
-      <h2>Restas</h2>
-    </button>
-  </mat-grid-tile>
-
-  <br><br>
+      <button mat-button title="{{tema.totalVideos}} cursos"  >
+        <h2>{{tema.nombre}}</h2>
+        <h2><img src="{{tema.img}}" class="iman" [routerLink]="'/ramas'"></h2>
+        <a [routerLink]="['/videos',tema._id]">"Ir a video"</a>
+      </button>
+    </mat-grid-tile>
+    <br>
+    <div *ngIf="(i+1)==2">
+      <br><br>
+    </div>
+  </div>
 </mat-grid-list>
 <br><br>
 <button mat-raised-button mat-button color="primary" class="ancho button" [routerLink]="'/ramas'" >Regresar</button>
