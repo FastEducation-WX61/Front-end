@@ -1,24 +1,27 @@
 <app-nav-barprincipal></app-nav-barprincipal>
 
 <h1 class="title">Cursos Disponibles</h1>
-<br><br><br><br>
-<mat-grid-list cols="2" rowHeight="2.3:0.6">
 
-  <div  *ngFor="let curso of cursos; let i=index" >
-    <mat-grid-tile>
 
-      <button mat-button title="{{curso.totalVideos}} cursos"  >
-        <h2>{{curso.nombre}}</h2>
-        <h2><img src="{{curso.img}}" class="iman" [routerLink]="'/ramas'"></h2>
-        <h2>"Total de videos":{{curso.totalVideos}}</h2>
-        <a [routerLink]="['/ramas',curso._id]">"Ir a curso"</a>
-      </button>
-    </mat-grid-tile>
-    <br>
-    <div *ngIf="(i+1)==2">
-      <br><br>
-    </div>
-  </div>
-</mat-grid-list>
-<br><br>
-<button mat-raised-button mat-button color="primary" class="button" [routerLink]="'/principal'" >Regresar</button>
+<div style=" width: 100%; padding: 0; margin: 0;">
+  <mat-grid-list [cols]="3" rowHeight="500px" >
+<div  *ngFor="let curso of cursos; let i=index">
+
+  <mat-grid-tile rowspan="1" colspan="1" style="position: center" >
+    <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{curso.nombre}}</mat-card-title>
+    </mat-card-header>
+  <img mat-card-image src="{{curso.img}}" />
+    <mat-card-content>
+      <mat-card-subtitle>
+        TOTAL RAMAS: {{curso.totalRamas}}
+      </mat-card-subtitle>
+      <button  mat-button [routerLink]="['/ramas',curso._id]" class="irRuta">Ir a curso</button>
+    </mat-card-content>
+  </mat-card>
+  </mat-grid-tile>
+</div>
+  </mat-grid-list>
+</div>
+<button mat-raised-button mat-button class="button" [routerLink]="'/principal'" >Regresar</button>

@@ -1,18 +1,59 @@
-
 .title{
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   padding: 15px;
-  margin: auto;
   text-align: center;
+  margin: 0 auto;
+
 }
-mat-grid-tile {
-  background: rosybrown;
-  width: 50%;
-  max-width: 300px;
+.contenedor{
+  position: relative;
+  display: inline-block;
   text-align: center;
-  margin-left: 150px;
-  border-radius: 5%;
+  color: white;
+
+}
+.for{
+  border: 1px solid red;
+}
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+
+}
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+.card{
+  width: 300px;
+  box-shadow: -2px 4px 20px 0 rgba(148,148,148,0.75);
+  -webkit-box-shadow: -2px 4px 20px 0 rgba(148,148,148,0.75);
+  -moz-box-shadow: -2px 4px 20px 0 rgba(148,148,148,0.75);
+}
+mat-card-actions{
+  display:flex;
+  justify-content: center;
+  padding:15px
+}
+button{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  border:  none;
+  background: #204114;
+  cursor: pointer;
+  color: white;
+}
+img{
+  height: 300px;
 }
 .button{
   background-color: #204114;
@@ -24,24 +65,15 @@ mat-grid-tile {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7%;
-}
-.body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  height: 100%;
-}
-.container{
-  height: 100%;
-  width:100%;
-  grid-gap: 10px;
-  display:grid;
-  grid-template-columns: 50% 50%;
+  height: 6%;
 
 }
-.iman{
-  width: 20%;
-  height: 220%;
+mat-card-content{
+  display: flex;
+  justify-content: center;
+
+
+}
+.irRuta{
+  margin-left: 280px;
 }
