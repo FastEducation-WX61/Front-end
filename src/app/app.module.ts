@@ -37,6 +37,7 @@ import {SearchComponent} from "./components/fasteducation/Search/search.componen
 import {TemasComponent} from "./components/fasteducation/temas/temas.component";
 import {VideoComponent} from "./components/fasteducation/video/video.component";
 import {RamasComponent} from "./components/fasteducation/Ramas/ramas.component";
+import { RouterTestingModule } from "@angular/router/testing";
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import {RamasComponent} from "./components/fasteducation/Ramas/ramas.component";
         AppRoutingModule,
         MatGridListModule,
         YouTubePlayerModule,
-        MatCardModule
+        MatCardModule,
+        RouterTestingModule
     ],
   providers: [],
   bootstrap: [AppComponent]

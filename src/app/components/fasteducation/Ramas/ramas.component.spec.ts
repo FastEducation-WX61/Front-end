@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from "@angular/router/testing";
+import { HttpClientTestingModule } from "@angular/common/http/testing";
 
 import { RamasComponent } from './ramas.component';
 
@@ -8,7 +10,8 @@ describe('RamasComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RamasComponent ]
+      declarations: [ RamasComponent ],
+      imports: [RouterTestingModule, HttpClientTestingModule],
     })
       .compileComponents();
   });
