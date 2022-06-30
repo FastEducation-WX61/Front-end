@@ -1,23 +1,31 @@
 <app-nav-barprincipal></app-nav-barprincipal>
-<h1 class="titles">Matemáticas</h1>
-<h1 class="title">La escencia de las matemáticas, no es hacer las cosas faciles complicadas, sino hacer las cosas complicadas simples.</h1>
-<h1 class="title">Ramas:</h1>
-<mat-grid-list cols="2" rowHeight="2.3:0.5">
-  <div  *ngFor="let rama of ramas; let i=index" >
-    <mat-grid-tile>
 
-      <button mat-button title="{{rama.totalVideos}} cursos" >
-        <h2>{{rama.nombre}}</h2>
-        <h2><img src="{{rama.img}}" class="iman" [routerLink]="'/temas'"></h2>
-        <h2>"Total de videos":{{rama.totalVideos}}</h2>
-        <a [routerLink]="['/temas',rama._id]">"Ir a curso"</a>
-      </button>
-    </mat-grid-tile>
-    <br>
-    <div *ngIf="(i+1)==2">
-      <br><br>
+<div style="text-align: center">
+  <h1>Ramas</h1>
+  <mat-divider></mat-divider>
+</div>
+<div *ngFor="let rama of ramas">
+  <mat-card>
+    <div class="info" >
+      <div style="padding-bottom:0">
+        <h1>
+          Rama: {{rama.nombre}}
+        </h1>
+      </div>
+      <div class="hora">
+        <h1>Cantidad de videos: {{rama.totalVideos}}</h1>
+      </div>
     </div>
-  </div>
-</mat-grid-list>
-<br><br>
-<button mat-raised-button mat-button color="primary" class="button" [routerLink]="'/cursos'" >Regresar</button>
+      <div class="img">
+        <img src="{{rama.img}}">
+      </div>
+
+    <div class="actions">
+      <button mat-raised-button  [routerLink]="['/temas',rama._id]"> Ir rama</button>
+    </div>
+  </mat-card>
+  <mat-divider></mat-divider>
+</div>
+
+
+<button mat-raised-button mat-button  class="button" [routerLink]="'/cursos'" >Regresar</button>

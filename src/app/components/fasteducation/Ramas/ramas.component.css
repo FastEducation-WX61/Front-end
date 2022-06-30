@@ -1,39 +1,52 @@
 
-.title{
+img{
+  height: 200px;
+}
+main {
   width: 100%;
-  max-width: 800px;
-  padding: 15px;
+}
+mat-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions h2{
+  text-align: center;
+}
+.actions button{
+  margin-left: 0.9rem;
+}
+.hora {
+  display: flex;
+  margin: 10px 0;
+}
 
-  text-align: left;
+.img{
+  display: flex;
 }
-.titles{
-  width: 100%;
-  max-width: 800px;
-  padding: 15px;
-  margin: auto;
-  text-align: center;
-}
-mat-grid-tile {
-  background: rosybrown;
-  width: 50%;
-  max-width: 300px;
-  text-align: center;
-  margin-left: 150px;
-  border-radius: 5%;
+button{
+
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  border:  none;
+  background: #204114;
+  cursor: pointer;
+  color: white;
+
 }
 .button{
   background-color: #204114;
   width: 100%;
   max-width: 250px;
   padding: 15px;
-  margin: auto;
+  margin: 200px auto;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 7%;
 }
-.iman{
-  width: 20%;
-  height: 220%;
-}
+
