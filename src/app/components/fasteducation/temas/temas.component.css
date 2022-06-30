@@ -30,3 +30,55 @@ mat-grid-tile {
   width: 20%;
   height: 220%;
 }
+
+
+img{
+  height: 200px;
+}
+main {
+  width: 100%;
+}
+mat-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions h2{
+  text-align: center;
+}
+.actions button{
+  margin-left: 0.9rem;
+}
+.hora {
+  display: flex;
+  margin: 10px 0;
+}
+
+.img{
+  display: flex;
+}
+button{
+
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  border:  none;
+  background: #204114;
+  cursor: pointer;
+color: white;
+}
+.button{
+  background-color: #204114;
+  width: 100%;
+  max-width: 250px;
+  padding: 15px;
+  margin: 200px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7%;
+}
+
