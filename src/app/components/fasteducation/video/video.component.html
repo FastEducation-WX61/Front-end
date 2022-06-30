@@ -1,6 +1,13 @@
 
 <app-nav-barprincipal></app-nav-barprincipal>
-<mat-grid-list cols="2" rowHeight="2.3:0.5">
-{{video.nombre}}
-</mat-grid-list>
+<div class="title">
+  <h1>{{video.nombre}}</h1>
+</div>
+<div class="video">
+  <video width="1500" height="700" controls poster="{{video.img}}">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 <button mat-raised-button mat-button color="primary" class="button titles" [routerLink]="'/temas'" >Regresar</button>
+
