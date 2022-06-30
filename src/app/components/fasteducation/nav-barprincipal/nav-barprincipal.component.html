@@ -1,8 +1,10 @@
 <mat-toolbar class="tb2">
-  <img src="https://i.ibb.co/P4RCJKd/Logo-Makr-0-Nm-PKo.png" alt="Fast Education" class="logo" [routerLink]="'/principal'">
+  <div style="width: 100%">
+    <img src="https://i.ibb.co/P4RCJKd/Logo-Makr-0-Nm-PKo.png" alt="Fast Education" class="logo" [routerLink]="'/principal'">
+  </div>
+  <div class="search">
   <app-search></app-search>
-
+  </div>
   <span class="example-spacer"></span>
   <button mat-button [routerLink]="'/login'"><u>Cerrar Sesion</u></button>
-
 </mat-toolbar>

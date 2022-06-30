@@ -8,3 +8,12 @@
 .tb2{
   background-color: #204114;
 }
+img{
+background: black;
+  border-radius: 5px;
+  height: 200px;
+}
+.search{
+  margin: 500px 0;
+}
+
