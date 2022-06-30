@@ -1,25 +1,30 @@
 <app-nav-barprincipal></app-nav-barprincipal>
-<div class="body">
-  <div class="container">
-<h1 class="title">"Elige la ruta de aprendizaje que deseas estudiar"</h1>
-<mat-grid-list cols="2" rowHeight="4:1">
-<div  *ngFor="let ruta of rutas; let i=index" >
-    <mat-grid-tile>
-      <button mat-button title="{{ruta.totalCursos}} cursos"  >
-        <h2>{{ruta.nombre}}</h2>
-        <h2><img src="{{ruta.img}}" class="iman" ></h2>
-        <h2>"Total de cursos":{{ruta.totalCursos}}</h2>
-        <a [routerLink]="['/cursos',ruta._id]">"Ir a ruta"</a>
-      </button>
-    </mat-grid-tile>
-  <br>
-  <div *ngIf="(i+1)==2">
-  <br>
-  </div>
-
+<div class="title">
+<h1 >Rutas de aprendizaje</h1>
 </div>
+<div style=" width: 100%; padding: 0; margin: 0;">
+  <mat-grid-list [cols]="colSize" rowHeight="500px" >
+    <div  *ngFor="let ruta of rutas; let i=index" >
+
+      <mat-grid-tile rowspan="1" colspan="1" style="position: center" >
+        <mat-card class="card">
+
+        <img mat-card-image src="{{ruta.img}}" alt="Foto de un curso">
+
+          <mat-card-header>
+            <mat-card-title>Total de cursos: {{ruta.totalCursos}}</mat-card-title>
+          </mat-card-header>
+          <mat-divider inset></mat-divider>
+          <mat-card-actions>
+            <button mat-button [routerLink]="['/cursos',ruta._id]">Ir a ruta</button>
+          </mat-card-actions>
+
+
+        </mat-card>
+  </mat-grid-tile>
+    </div>
 </mat-grid-list>
-<button mat-raised-button mat-button color="primary" class="button" [routerLink]="'/login'" >Regresar</button>
+</div>
 
-</div>
-</div>
+<button mat-raised-button mat-button class="button" [routerLink]="'/login'" >Regresar</button>
+
